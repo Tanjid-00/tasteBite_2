@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <div
+      class="container bg-white mx-auto px-3 max-w-[600px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] xl:px-20"
+    >
+      <nav
+        class="navbar bg-white py-5 md:py-10 grid grid-cols-2 items-center justify-between lg:grid-cols-3 lg:justify-between lg:items-center"
+      >
+        <img class="w-28 md:w-auto" src="./assets/brands/brand4.svg" alt="" />
+        <div class="navItems">
+          <ul
+            class="flex w-full flex-col gap-2 pt-4 lg:pt-0 lg:gap-7 lg:flex lg:items-center lg:flex-row lg:justify-between"
+          >
+            <li>
+              <details class="dropdown">
+                <summary class="font-semibold py-2">
+                  Home Page <i class="fa fa-angle-down"></i>
+                </summary>
+                <ul class="content">
+                  <li><a href="#">Home V1</a></li>
+                  <li><a href="#">Home V2</a></li>
+                  <li><a href="#">Home V3</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details class="dropdown">
+                <summary class="font-semibold py-2">
+                  Recipe Page <i class="fa fa-angle-down"></i>
+                </summary>
+                <ul class="content">
+                  <li><a href="#">Full Width</a></li>
+                  <li><a href="#">Sidebar</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details class="dropdown">
+                <summary class="font-semibold py-2">
+                  Pages <i class="fa fa-angle-down"></i>
+                </summary>
+                <ul class="content">
+                  <li><a href="#">Category</a></li>
+                  <li><a href="#">Archieve</a></li>
+                  <li><a href="#">Favourites</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Blog Page</a></li>
+                  <li><a href="#">Search Results</a></li>
+                </ul>
+              </details>
+            </li>
+            <li class="hover:text-[#ff642b]">
+              <a class="font-semibold" href="#"> Element</a>
+            </li>
+            <li class="hover:text-[#ff642b]">
+              <a class="font-semibold" href="#"> Buy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center justify-end gap-10">
+          <i class="fa-solid fa-search text-2xl lg:text-3xl"></i>
+          <img
+            class="h-8 rounded-full"
+            src="./assets//brands/Baki.jpg"
+            alt=""
+          />
+          <i
+            id="navBtn"
+            class="fa-solid fa-bars text-2xl hover:text-[#ff642b] lg:hidden cursor-pointer"
+          ></i>
+        </div>
+      </nav>
+      <!-- ----------------------------------- Main -->
+      <main class="pt-5 md:pt-10 p-1">
+        <section id="sec-1">
+          <div class="flex justify-between">
+            <div class="flex gap-3 justify-between items-center">
+              <i class="fas fa-arrows-turn-right text-[#ff642b]"></i>
+              <p class="text-sm">85% would make this again</p>
+            </div>
+            <div class="flex items-center gap-3 md:gap-10 text-xl md:text-2xl">
+              <i class="fas fa-arrow-up hover:text-[#ff642b]"></i>
+              <i class="far fa-bookmark hover:text-[#ff642b]"></i>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-5 md:gap-8 pt-5 md:pt-10">
+            <h1 class="font-serif font-bold text-[20px] md:text-6xl">
+              Strawberry Cream Cheesecake
+            </h1>
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-5 lg:w-[50%]"
+            >
+              <div class="flex items-center gap-3">
+                <img
+                  class="w-8 rounded-full"
+                  src="./assets/brands/profile.jpg"
+                  alt=""
+                />
+                <p>Tricia Albert</p>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="flex items-center gap-2 text-sm">
+                  <i class="far fa-calendar"></i>
+                  <p>Yesterday</p>
+                </div>
+                <div class="flex items-baseline gap-2">
+                  <i class="far fa-message"></i>
+                  <p>25</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./assets/brands/star-fill.svg" alt="" />
+                <img src="./assets/brands/star-fill.svg" alt="" />
+                <img src="./assets/brands/star-fill.svg" alt="" />
+                <img src="./assets/brands/star-fill.svg" alt="" />
+                <img src="./assets/brands/star-fill.svg" alt="" />
+              </div>
+            </div>
+            <hr class="border-1 border-gray-400" />
+            <div class="grid grid-cols-1 gap-8">
+              <p class="text-sm leading-6 md:text-xl">
+                One thing I learned living in the Canarsie section of Brooklyn,
+                NY was how to cook a good Italian meal. Here is a recipe I
+                created after having this dish in a restaurant. Enjoy!
+              </p>
+              <div class="rounded-xl">
+                <img
+                  class="w-full rounded-xl"
+                  src="./assets/sec_1/menu144.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ----------------------------------  Section -2  -->
+
+        <section id="sec_2" class="py-7 gap-12 md:py-10">
+          <div id="left">
+            <div class="flex gap-3 md:gap-7 items-center">
+              <div class="border-r border-slate-500 pr-3 md:pr-7">
+                <span class="text-xs text-slate-500">PREP TIME</span>
+                <p>15 MIN</p>
+              </div>
+              <div class="border-r border-slate-500 pr-3 md:pr-7">
+                <span class="text-xs text-slate-500">PREP TIME</span>
+                <p>15 MIN</p>
+              </div>
+              <div class="flex gap-3 border-r border-slate-500 pr-3 md:pr-7">
+                <div>
+                  <span class="text-xs text-slate-500">SERVINGS</span>
+                  <p>4 PEOPLE</p>
+                </div>
+                <i class="far fa-pen-to-square self-end"></i>
+              </div>
+
+              <i class="fas fa-print text-slate-700"></i>
+            </div>
+            <div class="py-10">
+              <h1 class="font-serif font-semibold text-2xl md:text-3xl">
+                Ingradients
+              </h1>
+              <div>
+                <h2 class="font-bold py-5">For the Crust</h2>
+                <ul class="flex flex-col gap-5">
+                  <li>
+                    <div class="flex gap-4 items-start cursor-pointer">
+                      <i class="far fa-circle text-2xl"></i>
+                      <p class="text-lg md:text-xl">400g graham crackers</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex gap-4 items-start cursor-pointer">
+                      <i class="far fa-circle text-2xl"></i>
+                      <p class="text-lg md:text-xl">
+                        150g unsalted butters, melted
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 class="font-bold py-5">For the Cheesecake</h2>
+                <ul class="flex flex-col gap-5">
+                  <li>
+                    <div class="flex gap-4 items-start cursor-pointer">
+                      <i class="far fa-circle text-2xl"></i>
+                      <p class="text-lg md:text-xl">300g marshmallows</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex gap-4 items-start cursor-pointer">
+                      <i class="far fa-circle text-2xl"></i>
+                      <p class="text-lg md:text-xl">
+                        175g unsalted butter, melted
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex gap-4 items-start cursor-pointer">
+                      <i class="far fa-circle text-2xl"></i>
+                      <p class="text-lg md:text-xl">
+                        500g Philadelphia cream cheese, softened
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex gap-4 items-start cursor-pointer">
+                      <i class="far fa-circle text-2xl"></i>
+                      <p class="text-lg md:text-xl">
+                        250ml thickened/whipping cream, warm
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex gap-4 items-start cursor-pointer">
+                      <i class="far fa-circle text-2xl"></i>
+                      <p class="text-lg md:text-xl">
+                        3 tbsp powdered gelatin + 3 tbsp water
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex gap-4 items-start cursor-pointer">
+                      <i class="far fa-circle text-2xl"></i>
+                      <p class="text-lg md:text-xl">5 drops purple food gel</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="flex gap-4 items-start cursor-pointer">
+                      <i class="far fa-circle text-2xl"></i>
+                      <p class="text-lg md:text-xl">3 drops blue food gel</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:py-10">
+              <h1 class="font-serif font-semibold text-2xl md:text-3xl">
+                Instructions
+              </h1>
+              <ul class="flex flex-col gap-7 pt-5">
+                <li class="flex items-start gap-3">
+                  <h3 class="bg-[#ff642b] px-2 py-0 rounded-full text-white">
+                    1
+                  </h3>
+                  <p class="text-sm md:text-xl">
+                    To prepare crust add graham crackers to a food processor and
+                    process until you reach fine crumbs. Add melted butter and
+                    pulse 3-4 times to coat crumbs with butter.
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <h3 class="bg-[#ff642b] px-2 py-0 rounded-full text-white">
+                    2
+                  </h3>
+                  <p class="text-sm md:text-xl">
+                    Pour mixture into a 20cm (8”) tart tin. Use the back of a
+                    spoon to firmly press the mixture out across the bottom and
+                    sides of the tart tin. Chill for 30 min.
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <h3 class="bg-[#ff642b] px-2 py-0 rounded-full text-white">
+                    3
+                  </h3>
+                  <p class="text-sm md:text-xl">
+                    Begin by adding the marshmallows and melted butter into a
+                    microwave safe bowl. Microwave for 30 seconds and mix to
+                    combine. Set aside.
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <h3 class="bg-[#ff642b] px-2 py-0 rounded-full text-white">
+                    4
+                  </h3>
+                  <p class="text-sm md:text-xl">
+                    Next, add the gelatine and water to a small mixing bowl and
+                    mix to combine. Microwave for 30 seconds.
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <h3 class="bg-[#ff642b] px-2 py-0 rounded-full text-white">
+                    5
+                  </h3>
+                  <p class="text-sm md:text-xl">
+                    Add the cream cheese to the marshmallow mixture and use a
+                    hand mixer or stand mixer fitted with a paddle attachment to
+                    mix until smooth.
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <h3 class="bg-[#ff642b] px-2 py-0 rounded-full text-white">
+                    6
+                  </h3>
+                  <p class="text-sm md:text-xl">
+                    Add the warm cream and melted gelatin mixture and mix until
+                    well combined.
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <h3 class="bg-[#ff642b] px-2 py-0 rounded-full text-white">
+                    7
+                  </h3>
+                  <p class="text-sm md:text-xl">
+                    Add 1/3 of the mixture to a mixing bowl, add purple food gel
+                    and mix until well combined. Colour 1/3 of the mixture blue.
+                    Split the remaining mixture into two mixing bowls, colour
+                    one pink and leave the other white.
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <h3 class="bg-[#ff642b] px-2 py-0 rounded-full text-white">
+                    8
+                  </h3>
+                  <p class="text-sm md:text-xl">
+                    Pour half the purple cheesecake mixture into the chill tart
+                    crust. Add half the blue and then add the remaining purple
+                    and blue in the tart tin. Use a spoon to drizzle some pink
+                    cheesecake on top. Use a skewer or the end of a spoon to
+                    swirl the pink. Add some small dots of the plain cheesecake
+                    mixture to create stars and then sprinkle some more starts
+                    on top before chilling for 2 hours.
+                  </p>
+                </li>
+                <li class="flex items-start gap-3">
+                  <h3 class="bg-[#ff642b] px-2 py-0 rounded-full text-white">
+                    9
+                  </h3>
+                  <p class="text-sm md:text-xl">Slice with a knife to serve.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="right" class="flex flex-col">
+            <div class="bg-[#f9f9f9] p-5 pb-10 rounded-lg h-fit">
+              <h2 class="font-serif font-semibold text-2xl md:text-3xl py-3">
+                Nutrition Facts
+              </h2>
+              <table class="w-full">
+                <tr
+                  class="border-b border-slate-300 flex justify-between py-[6px]"
+                >
+                  <td class="text-slate-600">Calories</td>
+                  <td>219.9</td>
+                </tr>
+                <tr
+                  class="border-b border-slate-300 flex justify-between py-[6px]"
+                >
+                  <td class="text-slate-600">Total Fat</td>
+                  <td>20.7 g</td>
+                </tr>
+                <tr
+                  class="border-b border-slate-300 flex justify-between py-[6px]"
+                >
+                  <td class="text-slate-600">Saturated Fat</td>
+                  <td>2.2 g</td>
+                </tr>
+                <tr
+                  class="border-b border-slate-300 flex justify-between py-[6px]"
+                >
+                  <td class="text-slate-600">Cholesterol</td>
+                  <td>37.4 mg</td>
+                </tr>
+                <tr
+                  class="border-b border-slate-300 flex justify-between py-[6px]"
+                >
+                  <td class="text-slate-600">Sodium</td>
+                  <td>120.3 mg</td>
+                </tr>
+                <tr
+                  class="border-b border-slate-300 flex justify-between py-[6px]"
+                >
+                  <td class="text-slate-600">Potassium</td>
+                  <td>32.8 mg</td>
+                </tr>
+                <tr
+                  class="border-b border-slate-300 flex justify-between py-[6px]"
+                >
+                  <td class="text-slate-600">Toatal Carbohydrate</td>
+                  <td>22.3 g</td>
+                </tr>
+                <tr
+                  class="border-b border-slate-300 flex justify-between py-[6px]"
+                >
+                  <td class="text-slate-600">Sugars</td>
+                  <td>8.4 g</td>
+                </tr>
+                <tr class="flex justify-between py-[6px]">
+                  <td class="text-slate-600">Protein</td>
+                  <td>7.9 g</td>
+                </tr>
+              </table>
+            </div>
+            <div class="py-5 md:py-10">
+              <h1 class="font-serif font-semibold text-2xl py-7 md:text-3xl">
+                Fresh Recipes
+              </h1>
+              <div class="flex flex-col gap-8">
+                <div
+                  id="hoverImgBox"
+                  class="grid grid-cols-2 justify-between items-center gap-5 cursor-pointer duration-300 hover:text-[orangered]"
+                >
+                  <div
+                    class="overflow-hidden rounded-lg max-w-[150px] h-[100px]"
+                  >
+                    <img
+                      id="hoverImg"
+                      class="duration-500 rounded-t-lg w-[150px] h-[100px]"
+                      src="./assets/sec_2/menu14.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-1">
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                    </div>
+                    <p class="font-semibold md:text-xl">
+                      Spinach and Cheese Pasta
+                    </p>
+                  </div>
+                </div>
+                <div
+                  id="hoverImgBox"
+                  class="grid grid-cols-2 justify-between items-center gap-5 cursor-pointer duration-300 hover:text-[orangered]"
+                >
+                  <div
+                    class="overflow-hidden rounded-lg max-w-[150px] h-[100px]"
+                  >
+                    <img
+                      id="hoverImg"
+                      class="duration-500 rounded-t-lg w-[150px] h-[100px]"
+                      src="./assets/sec_2/menu15.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-1">
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                    </div>
+                    <p class="font-semibold md:text-xl">
+                      Perfect Fancy Glazed Donuts
+                    </p>
+                  </div>
+                </div>
+                <div
+                  id="hoverImgBox"
+                  class="grid grid-cols-2 justify-between items-center gap-5 cursor-pointer duration-300 hover:text-[orangered]"
+                >
+                  <div
+                    class="overflow-hidden rounded-lg max-w-[150px] h-[100px]"
+                  >
+                    <img
+                      id="hoverImg"
+                      class="duration-500 rounded-t-lg w-[150px] h-[100px]"
+                      src="./assets/sec_2/menu16.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-1">
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                    </div>
+                    <p class="font-semibold md:text-xl">
+                      Perfects Fancy Glazed
+                    </p>
+                  </div>
+                </div>
+                <div
+                  id="hoverImgBox"
+                  class="grid grid-cols-2 justify-between items-center gap-5 cursor-pointer duration-300 hover:text-[orangered]"
+                >
+                  <div
+                    class="overflow-hidden rounded-lg max-w-[150px] h-[100px]"
+                  >
+                    <img
+                      id="hoverImg"
+                      class="duration-500 rounded-t-lg w-[150px] h-[100px]"
+                      src="./assets/sec_2/menu17.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-1">
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                    </div>
+                    <p class="font-semibold md:text-xl">
+                      Mighty Cheesy Burger Breakfast
+                    </p>
+                  </div>
+                </div>
+                <div
+                  id="hoverImgBox"
+                  class="grid grid-cols-2 justify-between items-center gap-5 cursor-pointer duration-300 hover:text-[orangered]"
+                >
+                  <div
+                    class="overflow-hidden rounded-lg max-w-[150px] h-[100px]"
+                  >
+                    <img
+                      id="hoverImg"
+                      class="duration-500 rounded-t-lg w-[150px] h-[100px]"
+                      src="./assets/sec_2/menu18.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-1">
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                      <img src="./assets/brands/star-fill.svg" alt="" />
+                    </div>
+                    <p class="font-semibold md:text-xl">
+                      Chocolate and Banana Buiscuits
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col py-16 px-5 my-10 md:my-5 gap-5 text-center bg-[#ffd8ca] rounded-xl"
+            >
+              <h1 class="font-serif font-bold text-xl sm:text-3xl md:mx-auto">
+                Deliciousness to your inbox
+              </h1>
+              <p class="lg">
+                Enjoy weekly hand picked recipes <br />
+                and recommendations
+              </p>
+              <form class="w-full flex flex-col gap-3 relative" action="">
+                <input
+                  class="w-full p-3 outline-none rounded-sm"
+                  type="email"
+                  placeholder="Email Address"
+                />
+
+                <button
+                  class="w-full bg-[#ff642b] hover:bg-[#ff642b] rounded-sm text-white p-3"
+                  type="submit"
+                >
+                  JOIN
+                </button>
+              </form>
+              <p class="text-sm">
+                By joining our newsletter you agree to our
+                <span class="border-b border-red-500"
+                  >Terms and Conditions</span
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- --------------------------------------------- Section 3 -->
+        <section class="grid grid-cols-1 gap-5 py-5 md:py-20 md:gap-10">
+          <h1 class="font-serif text-2xl font-bold md:text-6xl">
+            Already made this?
+          </h1>
+          <button
+            class="border w-fit border-black rounded-lg bg-white text-black hover:bg-black hover:text-white duration-300 px-10 py-2"
+          >
+            Share your feedback
+          </button>
+          <hr class="border-[6px] border-[#ff642b]" />
+        </section>
+        <section class="py-7 md:py-20">
+          <h1 class="font-serif text-2xl font-bold md:text-6xl pb-3">
+            Comments <sub class="font-light">(25)</sub>
+          </h1>
+          <hr class="border border-slate-300" />
+        </section>
+        <div id="comments" class="grid grid-cols-1">
+          <div class="flex items-center justify-start gap-4 py-10">
+            <img
+              class="w-10 rounded-full self-start"
+              src="./assets/brands/Baki.jpg"
+              alt=""
+            />
+            <div class="grid grid-cols-1 gap-7">
+              <div>
+                <h3 class="font-bold">Jelanee Uwaezuoke</h3>
+                <p class="text-slate-500 text-sm">45min ago</p>
+              </div>
+              <p class="text-sm">
+                Synth polaroid bitters chillwave pickled. Vegan disrupt tousled,
+                Portland keffiyeh aesthetic food truck sriracha cornhole
+                single-origin coffee church-key roof party.
+              </p>
+              <div
+                class="flex items-center justify-start gap-7 text-sm text-slate-600"
+              >
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-message"></i> Reply (2)
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-heart"></i> 48
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">... More</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="flex items-center justify-start gap-4 ml-14 py-10">
+            <img
+              class="w-10 rounded-full self-start"
+              src="./assets/brands/Baki.jpg"
+              alt=""
+            />
+            <div class="grid grid-cols-1 gap-7">
+              <div>
+                <h3 class="font-bold">Qiu Xun</h3>
+                <p class="text-slate-500 text-sm">45min ago</p>
+              </div>
+              <p class="text-sm">Synth polaroid bitters chillwave pickled.</p>
+              <div
+                class="flex items-center justify-start gap-7 text-sm text-slate-600"
+              >
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-message"></i> Reply (2)
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-heart"></i> 48
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">... More</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="flex items-center justify-start gap-4 ml-14 py-10">
+            <img
+              class="w-10 rounded-full self-start"
+              src="./assets/brands/Baki.jpg"
+              alt=""
+            />
+            <div class="grid grid-cols-1 gap-7">
+              <div>
+                <h3 class="font-bold">Noell Blue</h3>
+                <p class="text-slate-500 text-sm">45min ago</p>
+              </div>
+              <p class="text-sm">
+                Synth polaroid bitters chillwave pickled. Vegan disrupt tousled,
+                Portland keffiyeh aesthetic food.
+              </p>
+              <div
+                class="flex items-center justify-start gap-7 text-sm text-slate-600"
+              >
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-message"></i> Reply (2)
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-heart"></i> 48
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">... More</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="flex items-center justify-start gap-4 py-10">
+            <img
+              class="w-10 rounded-full self-start"
+              src="./assets/brands/Baki.jpg"
+              alt=""
+            />
+            <div class="grid grid-cols-1 gap-7">
+              <div>
+                <h3 class="font-bold">Diane Landsdowne</h3>
+                <p class="text-slate-500 text-sm">45min ago</p>
+              </div>
+              <p class="text-sm">
+                Synth polaroid bitters chillwave pickled. Vegan disrupt tousled,
+                Portland keffiyeh aesthetic food truck sriracha cornhole
+                single-origin coffee church-key roof party.
+              </p>
+              <div
+                class="flex items-center justify-start gap-7 text-sm text-slate-600"
+              >
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-message"></i> Reply (2)
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-heart"></i> 48
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">... More</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="flex items-center justify-start gap-4 py-10">
+            <img
+              class="w-10 rounded-full self-start"
+              src="./assets/brands/Baki.jpg"
+              alt=""
+            />
+            <div class="grid grid-cols-1 gap-7">
+              <div>
+                <h3 class="font-bold">Malin Quist</h3>
+                <p class="text-slate-500 text-sm">45min ago</p>
+              </div>
+              <p class="text-sm">
+                Synth polaroid bitters chillwave pickled. Vegan disrupt tousled,
+                Portland keffiyeh aesthetic food truck sriracha cornhole.
+              </p>
+              <div
+                class="flex items-center justify-start gap-7 text-sm text-slate-600"
+              >
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-message"></i> Reply (2)
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-heart"></i> 48
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">... More</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="flex items-center justify-start gap-4 py-10">
+            <img
+              class="w-10 rounded-full self-start"
+              src="./assets/brands/Baki.jpg"
+              alt=""
+            />
+            <div class="grid grid-cols-1 gap-7">
+              <div>
+                <h3 class="font-bold">Nayara Delafuente</h3>
+                <p class="text-slate-500 text-sm">45min ago</p>
+              </div>
+              <p class="text-sm">Synth polaroid bitters chillwave pickled.</p>
+              <div
+                class="flex items-center justify-start gap-7 text-sm text-slate-600"
+              >
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-message"></i> Reply (2)
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-heart"></i> 48
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">... More</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="flex items-center justify-start gap-4 py-10">
+            <img
+              class="w-10 rounded-full self-start"
+              src="./assets/brands/Baki.jpg"
+              alt=""
+            />
+            <div class="grid grid-cols-1 gap-7">
+              <div>
+                <h3 class="font-bold">Henk Fortuin</h3>
+                <p class="text-slate-500 text-sm">45min ago</p>
+              </div>
+              <p class="text-sm">
+                Synth polaroid bitters chillwave pickled. Vegan disrupt tousled,
+                Portland keffiyeh aesthetic food truck sriracha cornhole
+                single-origin coffee church-key roof party.
+              </p>
+              <div
+                class="flex items-center justify-start gap-7 text-sm text-slate-600"
+              >
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-message"></i> Reply (2)
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">
+                  <i class="far fa-heart"></i> 48
+                </p>
+                <p class="hover:text-[#ff642b] cursor-pointer">... More</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <button
+          class="border border-black py-1 md:py-2 px-10 font-bold rounded-md text-black bg-white hover:text-white hover:bg-black w-full"
+        >
+          Load 25 more comments
+        </button>
+        <div class="my-12">
+          <div
+            class="flex flex-col py-7 md:flex-row md:justify-between md:items-center"
+          >
+            <h2 class="font-bold font-serif text-xl md:text-3xl">
+              Write a comment
+            </h2>
+            <p><span class="text-[#ff642b]">Login</span> to post a comment</p>
+          </div>
+          <div
+            class="bg-[#f9f9f9] rounded-md w-full h-64 flex flex-col justify-between p-5"
+          >
+            <textarea
+              class="bg-[#f9f9f9] outline-none w-full h-full resize-none"
+              name=""
+              id=""
+              placeholder=""
+            >
+@Jelanee Uwaezuoke Synth polaroid bitters chillwave pickled. Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party. 🔥</textarea
+            >
+            <div class="flex justify-between">
+              <div></div>
+              <button
+                class="bg-[#ff642b] text-white font-bold w-fit h-fit py-2 px-4 rounded-md self-end"
+              >
+                Post comment
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------------------------------------------- Section 4 -->
+
+        <section>
+          <div class="py-5">
+            <h1
+              class="font-serif font-bold text-2xl sm:text-3xl md:text-4xl py-8"
+            >
+              You might also like
+            </h1>
+            <div class="grid gap-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
+              <div
+                id="hoverImgBox"
+                class="flex flex-col max-w-[300px] gap-2 overflow-hidden rounded-lg"
+              >
+                <div class="overflow-hidden rounded-lg w-fit">
+                  <img
+                    id="hoverImg"
+                    class="duration-500 rounded-lg w-fit"
+                    src="./assets/sec_3/menu39.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2 class="h-16 font-semibold text-sm md:text-xl">
+                  Latest Recipes for You
+                </h2>
+              </div>
+              <div
+                id="hoverImgBox"
+                class="flex flex-col max-w-[300px] gap-2 overflow-hidden rounded-lg"
+              >
+                <div class="overflow-hidden rounded-lg w-fit">
+                  <img
+                    id="hoverImg"
+                    class="duration-500 rounded-lg w-fit"
+                    src="./assets/sec_3/menu40.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2 class="h-16 font-semibold text-sm md:text-xl">
+                  Latest Recipes for You
+                </h2>
+              </div>
+              <div
+                id="hoverImgBox"
+                class="flex flex-col max-w-[300px] gap-2 overflow-hidden rounded-lg"
+              >
+                <div class="overflow-hidden rounded-lg w-fit">
+                  <img
+                    id="hoverImg"
+                    class="duration-500 rounded-lg w-fit"
+                    src="./assets/sec_3/menu41.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2 class="h-16 font-semibold text-sm md:text-xl">
+                  Latest Recipes for You
+                </h2>
+              </div>
+              <div
+                id="hoverImgBox"
+                class="flex flex-col max-w-[300px] gap-2 overflow-hidden rounded-lg"
+              >
+                <div class="overflow-hidden rounded-lg w-fit">
+                  <img
+                    id="hoverImg"
+                    class="duration-500 rounded-lg w-fit"
+                    src="./assets/sec_3/menu42.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2 class="h-16 font-semibold text-sm md:text-xl">
+                  Latest Recipes for You
+                </h2>
+              </div>
+              <div
+                id="hoverImgBox"
+                class="flex flex-col max-w-[300px] gap-2 overflow-hidden rounded-lg"
+              >
+                <div class="overflow-hidden rounded-lg w-fit">
+                  <img
+                    id="hoverImg"
+                    class="duration-500 rounded-lg w-fit"
+                    src="./assets/sec_3/menu43.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2 class="h-16 font-semibold text-sm md:text-xl">
+                  Latest Recipes for You
+                </h2>
+              </div>
+              <div
+                id="hoverImgBox"
+                class="flex flex-col max-w-[300px] gap-2 overflow-hidden rounded-lg"
+              >
+                <div class="overflow-hidden rounded-lg w-fit">
+                  <img
+                    id="hoverImg"
+                    class="duration-500 rounded-lg w-fit"
+                    src="./assets/sec_3/menu20.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2 class="h-16 font-semibold text-sm md:text-xl">
+                  Latest Recipes for You
+                </h2>
+              </div>
+              <div
+                id="hoverImgBox"
+                class="flex flex-col max-w-[300px] gap-2 overflow-hidden rounded-lg"
+              >
+                <div class="overflow-hidden rounded-lg w-fit">
+                  <img
+                    id="hoverImg"
+                    class="duration-500 rounded-lg w-fit"
+                    src="./assets/sec_3/menu21.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2 class="h-16 font-semibold text-sm md:text-xl">
+                  Latest Recipes for You
+                </h2>
+              </div>
+              <div
+                id="hoverImgBox"
+                class="flex flex-col max-w-[300px] gap-2 overflow-hidden rounded-lg"
+              >
+                <div class="overflow-hidden rounded-lg w-fit">
+                  <img
+                    id="hoverImg"
+                    class="duration-500 rounded-lg w-fit"
+                    src="./assets/sec_3/menu22.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2 class="h-16 font-semibold text-sm md:text-xl">
+                  Latest Recipes for You
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="mt-10 bg-[#f9f9f9]">
+      <div
+        class="mx-auto py-7 px-5 max-w-[600px] md:max-w-[768px] md:py-20 text-slate-500 lg:max-w-[1024px] xl:max-w-[1280px] xl:px-20"
+      >
+        <div
+          class="flex flex-col gap-10 md:flex-row md:justify-between md:items-start"
+        >
+          <div class="flex flex-col gap-5 md:w-[40%]">
+            <img class="w-fit" src="./assets/brands/brand4.svg" alt="" />
+            <p>
+              "On the other hand, we denounce with righteous indignation and
+              dislike men who are so beguiled and demoralized by the charms of
+              pleasure of the moment
+            </p>
+          </div>
+          <div class="md:w-[60%] flex flex-col md:flex-row md:justify-around">
+            <div class="border-b md:border-b-0 py-2">
+              <div
+                class="footerTitle text-black flex justify-between items-center md:block md:w-fit"
+              >
+                <h2 class="font-semibold">Tastebite</h2>
+                <i class="fa fa-angle-down md:hidden"></i>
+              </div>
+              <ul class="footerLinks">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Feedback</a></li>
+              </ul>
+            </div>
+            <div class="border-b md:border-b-0 py-2">
+              <div
+                class="footerTitle text-black flex justify-between items-center md:block md:w-fit"
+              >
+                <h2 class="font-semibold">Legal</h2>
+                <i class="fa fa-angle-down md:hidden"></i>
+              </div>
+              <ul class="footerLinks">
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Conditions</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Copyright</a></li>
+              </ul>
+            </div>
+            <div class="border-b md:border-b-0 py-2">
+              <div
+                class="footerTitle text-black flex justify-between items-center md:block md:w-fit"
+              >
+                <h2 class="font-semibold">follw</h2>
+                <i class="fa fa-angle-down md:hidden"></i>
+              </div>
+              <ul class="footerLinks">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="hidden md:block mt-12 md:mt-28" />
+        <div
+          class="flex flex-col-reverse gap-4 pt-10 md:flex-row md:items-center md:justify-between"
+        >
+          <p class="text-sm">&copy;Tanjid 2024 - All rights reserved</p>
+          <div class="flex gap-12 items-center">
+            <i class="fa-brands fa-facebook-f text-2xl"></i>
+            <i class="fa-brands fa-instagram text-2xl"></i
+            ><i class="fa-brands fa-twitter text-2xl"></i
+            ><i class="fa-brands fa-youtube text-2xl"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
