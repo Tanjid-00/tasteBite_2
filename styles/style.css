@@ -1,0 +1,110 @@
+button {
+  cursor: pointer;
+}
+
+/* CSS to hide default triangle icon */
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+details summary {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+/* ------------------------------------- */
+#container {
+  padding: 3%;
+}
+
+/* ------------------------------------------- NavBar */
+
+.navItems {
+  order: 3;
+  background: white;
+  display: none;
+  grid-column: span 2;
+  width: 100%;
+}
+.expand {
+  display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+  .navItems {
+    display: flex;
+    order: unset;
+    grid-column: unset;
+  }
+}
+.dropdown .content {
+  font-size: 15px;
+  background: #ebebeb69;
+  border-radius: 6px;
+  line-height: 30px;
+  overflow: hidden;
+}
+.dropdown .content li {
+  padding: 3px 20px;
+
+  transition: 0.3s;
+}
+.dropdown summary {
+  white-space: noWrap;
+}
+.dropdown summary:hover {
+  color: #ff642b;
+}
+.dropdown .content li:hover {
+  background: #ff642b;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown > .content {
+    position: absolute;
+    background: white;
+    box-shadow: 0 0 5px #7b7b7b77;
+  }
+}
+
+/* --------------------------------------------- Sections */
+
+.deliciousBox > .delicImg {
+  overflow: hidden;
+  transition-duration: 0.4s;
+}
+.deliciousBox:hover .delicImg {
+  transform: scale(1.2);
+}
+
+/* --------------------------------------------- Section - 3 */
+
+#hoverImgBox:hover #hoverImg {
+  transform: scale(1.2);
+}
+#hoverImgBox:hover h2 {
+  color: #ff642b;
+}
+
+/* ------------------------------------------- - Footer */
+.footerTitle {
+  cursor: pointer;
+}
+.footerLinks {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.7s ease;
+}
+.hideShowLinks {
+  max-height: 200px;
+}
+.footerLinks > li:hover {
+  color: #ff642b;
+}
+
+@media screen and (min-width: 768px) {
+  .footerLinks {
+    max-height: 200px;
+  }
+}
